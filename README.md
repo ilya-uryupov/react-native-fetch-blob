@@ -54,7 +54,7 @@ Install package from npm
 npm install --save react-native-fetch-blob
 ```
 
-Or if using CocoaPods, add the pod to your `Podfile`
+**!! Don't, breaks the iOS build:** Or if using CocoaPods, add the pod to your `Podfile`
 
 ```
 pod 'react-native-fetch-blob',
@@ -69,25 +69,25 @@ npm install --save github:wkh237/react-native-fetch-blob-package#<branch_name>
 ```
 **Automatically Link Native Modules**
 
-For 0.29.2+ projects, simply link native packages via the following command (note: rnpm has been merged into react-native)
+**!! Don't, you're better off with manual linking:** For 0.29.2+ projects, simply link native packages via the following command (note: rnpm has been merged into react-native)
 
 ```
 react-native link
 ```
 
-As for projects < 0.29 you need `rnpm` to link native packages
+**!! Don't, you're better off with manual linking:** As for projects < 0.29 you need `rnpm` to link native packages
 
 ```sh
 rnpm link
 ```
 
-Optionally, use the following command to add Android permissions to `AndroidManifest.xml` automatically
+**!! Don't, you're better off with manual linking:** Optionally, use the following command to add Android permissions to `AndroidManifest.xml` automatically
 
 ```sh
 RNFB_ANDROID_PERMISSIONS=true react-native link
 ```
 
-pre 0.29 projects
+**!! Don't, you're better off with manual linking:** pre 0.29 projects
 
 ```sh
 RNFB_ANDROID_PERMISSIONS=true rnpm link
